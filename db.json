@@ -1,0 +1,111 @@
+{
+  "presentations": {
+    "upcoming": [
+      {
+        "id": 1,
+        "title": "The Impact of Climate Change on Local Ecosystems",
+        "subject": "Environmental Science",
+        "presenter": "Alex Johnson",
+        "date": "2023-05-15T14:00:00",
+        "status": "upcoming",
+        "description": "An analysis of how climate change affects local flora and fauna"
+      },
+      {
+        "id": 2,
+        "title": "Mathematical Models in Machine Learning",
+        "subject": "Advanced Mathematics",
+        "presenter": "Samantha Lee",
+        "date": "2023-05-18T10:30:00",
+        "status": "upcoming",
+        "description": "Exploring the mathematical foundations of modern ML algorithms"
+      }
+    ],
+    "completed": [
+      {
+        "id": 3,
+        "title": "The French Revolution: Causes and Effects",
+        "subject": "History",
+        "presenter": "Michael Chen",
+        "date": "2023-05-10T13:15:00",
+        "status": "completed",
+        "grade": "A",
+        "description": "A comprehensive analysis of the French Revolution"
+      },
+      {
+        "id": 4,
+        "title": "Analyzing Shakespeare's Hamlet",
+        "subject": "English Literature",
+        "presenter": "Emily Rodriguez",
+        "date": "2023-05-08T09:00:00",
+        "status": "completed",
+        "grade": "A-",
+        "description": "Character analysis and themes in Hamlet"
+      }
+    ],
+    "drafts": [
+      {
+        "id": 5,
+        "title": "Introduction to Quantum Computing",
+        "subject": "Computer Science",
+        "presenter": "David Kim",
+        "date": "2023-05-22T13:15:00",
+        "status": "draft",
+        "description": "Basic principles of quantum computing and its applications"
+      }
+    ]
+  },
+  "classes": [
+    {
+      "id": 1,
+      "name": "Advanced Biology",
+      "grade": "11",
+      "room": "203",
+      "studentCount": 24
+    },
+    {
+      "id": 2,
+      "name": "World History",
+      "grade": "10",
+      "room": "105",
+      "studentCount": 28
+    },
+    {
+      "id": 3,
+      "name": "AP Calculus",
+      "grade": "12",
+      "room": "301",
+      "studentCount": 18
+    },
+    {
+      "id": 4,
+      "name": "English Literature",
+      "grade": "11",
+      "room": "108",
+      "studentCount": 26
+    },
+    {
+      "id": 5,
+      "name": "Computer Science",
+      "grade": "10",
+      "room": "205",
+      "studentCount": 22
+    },
+    {
+      "id": 6,
+      "name": "Physics",
+      "grade": "12",
+      "room": "302",
+      "studentCount": 20
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@school.edu",
+      "role": "teacher",
+      "avatar": "JD"
+    }
+  ]
+}
+

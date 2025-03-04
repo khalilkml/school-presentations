@@ -1,0 +1,36 @@
+school-presentations/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── lib/
+│           └── utils.js
+├── models/
+│   ├── PresentationModel.js
+│   ├── ClassModel.js
+│   └── UserModel.js
+├── views/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Navigation.js
+│   │   └── UserMenu.js
+│   ├── pages/
+│   │   ├── PresentationView.js
+│   │   ├── ScheduleView.js
+│   │   └── ClassView.js
+│   └── templates/
+│       ├── presentation-card.js
+│       ├── class-card.js
+│       └── calendar.js
+├── controllers/
+│   ├── PresentationController.js
+│   ├── ScheduleController.js
+│   └── ClassController.js
+├── core/
+│   ├── Router.js
+│   ├── EventEmitter.js
+│   └── App.js
+└── services/
+    └── DatabaseService.js
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Presentation - SchoolPresent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header/Navigation -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+            <path d="M2 3h20"></path>
+            <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+            <path d="m7 21 5-5 5 5"></path>
+          </svg>
+          <span class="logo-text">SchoolPresent</span>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M2 3h20"></path>
+                  <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+                  <path d="m7 21 5-5 5 5"></path>
+                </svg>
+                Presentations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="schedule.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                  <line x1="16" x2="16" y1="2" y2="6"></line>
+                  <line x1="8" x2="8" y1="2" y2="6"></line>
+                  <line x1="3" x2="21" y1="10" y2="10"></line>
+                </svg>
+                Schedule
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="classes.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Classes
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-menu">
+          <button class="user-menu-button" id="userMenuButton">
+            <div class="avatar">JD</div>
+          </button>
+          <div class="dropdown-menu" id="userDropdown">
+            <div class="dropdown-header">
+              <p class="user-name">John Doe</p>
+              <p class="user-email">john.doe@school.edu</p>
+            </div>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Profile</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Settings</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#" class="dropdown-link">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="dashboard-header">
+          <div>
+            <h1 class="page-title">Add New Presentation</h1>
+            <p class="page-description">Create a new presentation for your class.</p>
+          </div>
+        </div>
+
+        <!-- Add Presentation Form -->
+        <div class="card max-w-2xl mx-auto">
+          <div class="card-body">
+            <form id="addPresentationForm" class="space-y-6">
+              <div class="form-group">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" id="title" name="title" class="form-input" placeholder="Enter presentation title" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select id="subject" name="subject" class="form-select" required>
+                    <option value="" disabled selected>Select subject</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                    <option value="english">English</option>
+                    <option value="art">Art</option>
+                    <option value="music">Music</option>
+                    <option value="physical_education">Physical Education</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="presenter" class="form-label">Presenter</label>
+                  <input type="text" id="presenter" name="presenter" class="form-input" placeholder="Enter presenter name" required>
+                </div>
+              </div>
+              
+              <div class="form-row three-columns">
+                <div class="form-group">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" id="date" name="date" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="time" class="form-label">Time</label>
+                  <input type="time" id="time" name="time" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="duration" class="form-label">Duration (minutes)</label>
+                  <select id="duration" name="duration" class="form-select" required>
+                    <option value="15">15 minutes</option>
+                    <option value="30" selected>30 minutes</option>
+                    <option value="45">45 minutes</option>
+                    <option value="60">60 minutes</option>
+                    <option value="90">90 minutes</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" name="description" class="form-textarea" placeholder="Enter a brief description of the presentation" rows="4"></textarea>
+                <p class="form-hint">Provide a brief overview of what the presentation will cover.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="status" class="form-label">Status</label>
+                <select id="status" name="status" class="form-select" required>
+                  <option value="upcoming" selected>Upcoming</option>
+                  <option value="draft">Draft</option>
+                </select>
+              </div>
+              
+              <div class="form-actions">
+                <a href="index.html" class="button secondary">Cancel</a>
+                <button type="submit" class="button primary">Create Presentation</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="add-presentation.js"></script>
+</body>
+</html>
+
